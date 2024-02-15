@@ -16,6 +16,7 @@ int input_precedence(char symbol)
         case '$': return 6;
         case '(': return 9;
         case ')': return 0;
+
         default: return 7;
     }
 }
@@ -33,6 +34,7 @@ int stack_precedence(char symbol)
         case '$': return 5;
         case '(': return 0;
         case '#':return -1;
+
         default: return 8;
     }
 }
@@ -96,5 +98,5 @@ void main()
     printf("Enter the infix expression: ");
     scanf("%s", infix);
     infix_to_postfix(infix, postfix);
-    printf("The postfix expression is %s.\n", postfix);
+    printf("The postfix expression is %s\n", postfix);
 }
