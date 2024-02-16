@@ -51,6 +51,7 @@ void main()
     int n, i, j, a[10][10], source, visited[10], choice, e[10][2];
     printf("Enter the number of vertices: ");
     scanf("%d", &n);    
+    printf("Enter the adjacency Matrix: \n");
     for(i=1; i<=n; i++)
     {
         for(j=1;j<=n;j++)
