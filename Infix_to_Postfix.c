@@ -50,7 +50,7 @@ void push(char item, int *top, int s[])
     s[*top] = item;
 }
 
-int pop(int *top, int s[])
+char pop(int *top, int s[])
 {
     if(*top == -1)
     {
